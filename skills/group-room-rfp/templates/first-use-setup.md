@@ -5,6 +5,7 @@ Check available tools first. Ask only what is missing or affects this job; accep
 - Name, organization and preferred contact details for hotel correspondence, if needed.
 - Preferred hotel quality, location, sourcing criteria and any hard exclusions.
 - Preferred report audience, detail and output format; Word, PDF, XLSX or plain text/CSV as supported.
+- Optional RFP document branding: ask whether the user wants a company or agency header and/or logo for Word and PDF exports. Use only the name, contact details, logo and styling the user provides. A plain document is the default. Store branding preferences and any logo only with permission in private storage; if persistence is unavailable, ask the user to provide them again when needed.
 - Whether browser control, authorized mailbox access, document and spreadsheet tools, private storage/memory, and scheduling actually work. Note limitations and manual alternatives.
 - Preferred private location for preferences, job records and source files, and permission to save them. Never store credentials in the record. If persistence is unavailable, offer a copyable summary and ask for it next session.
 - Submission and communication approval preferences: per action or explicit scoped batch approval, subject to host rules. Ask separately before creating an authorized monitoring schedule.
