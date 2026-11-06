@@ -4,6 +4,16 @@
 
 **Use at your own risk.** This project has not been validated on live websites, mailboxes or hotel systems. You are responsible for verifying requirements, recipients, submissions, proposal calculations, fees, deadlines and contract terms before acting. Incorrect outputs or external actions can cause financial loss or disclose confidential information. The software and documentation are provided without warranty under the [MIT License](LICENSE), which includes a limitation of author liability.
 
+## Why this exists
+
+I built this from the hotel sourcing work I know: the RFP is only the start. Someone still has to track what was sent, confirm what arrived, sort through changing proposals, catch missing costs, follow up, and give a decision-maker a clear comparison. This skill helps an AI assistant carry that work through in a practical, reviewable way.
+
+Like PT/OS, it keeps the system understandable and adaptable to the tools a person already has. The job record and outputs are portable. The workflow can use authorized browser, email, document, and spreadsheet tools when available, or plain files and manual steps when they are not.
+
+## What makes this different
+
+This is an assistant workflow for the planner's end-to-end job, not a hotel marketplace or a vendor's sourcing platform. It can work across hotel websites and email, with no required service or connector. It keeps proposal versions and source evidence visible, distinguishes unknown costs from zero, records whether a submission was actually confirmed, and prepares information for a human decision. External actions remain subject to the user's authorization.
+
 ## Start
 
 1. Give your assistant the `skills/group-room-rfp` folder, or paste `SKILL.md` and its referenced files into a capable chat. Installation differs by platform; no particular connector is required.
