@@ -39,15 +39,15 @@ Browser control, email, scheduling, persistent storage, and Word/PDF/XLSX genera
 
 AI output can be incomplete or wrong. Verify dates, calculations, prices, fees, deadlines, submission evidence, and contract terms before relying on them. Use only systems and data you are authorized to access; comply with applicable law and third-party website terms. Do not bypass authentication, CAPTCHAs, rate limits, or access controls. This project does not provide legal, tax, financial, or contracting advice, make payments, sign contracts, or accept proposals.
 
-## Other public projects by Kerry Cooper
+## Other public projects by Cooperman411
 
-These are separate projects. Their contents do not add requirements or instructions for using this repository.
+These are separate projects. They are not prerequisites, dependencies, or additional instructions for using this repository.
 
-- [PT/OS Workspace](https://github.com/cooperman411/plain-text-os): An AI-managed collection of plain-text files for projects, priorities, and workflows.
-- [PT/OS One](https://github.com/cooperman411/plain-text-os-one): A portable plain-text document for working with different AI assistants.
 - [Hotel Revenue Management Toolkit](https://github.com/cooperman411/hotel-revenue-management): An offline, human-reviewed toolkit for hotel revenue audits and provisional rate guidance.
-- [AteBit.Tech](https://github.com/cooperman411/AteBitTech): A directory of retro and vintage computing resources.
+- [PT/OS One](https://github.com/cooperman411/plain-text-os-one): A single plain-text document you give an AI assistant to carry forward your preferences, projects, decisions, and recurring tasks.
+- [PT/OS Workspace](https://github.com/cooperman411/plain-text-os): A collection of plain-text files an AI assistant can read and update to organize projects, priorities, and workflows.
+- [AteBit.Tech](https://github.com/cooperman411/AteBitTech): A curated directory of retro and vintage computing resources.
 
 ## License
 
-[MIT License](LICENSE). Copyright (c) 2026 Kerry Cooper.
+[MIT License](LICENSE). Copyright (c) 2026 Cooperman411.
