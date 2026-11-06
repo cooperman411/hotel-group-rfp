@@ -23,6 +23,7 @@ All organizations, hotels, offers and confirmations below are invented. No RFP w
 - **Time:** 9 a.m.–5 p.m.
 - **Setup:** U-shape preferred; boardroom acceptable
 - **AV and Wi-Fi:** Projector, screen and Wi-Fi requested
+- **Food and beverage:** Not requested; exclude catering from this quote
 
 ### Please include in your proposal
 

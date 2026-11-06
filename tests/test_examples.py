@@ -7,14 +7,14 @@ class Examples(unittest.TestCase):
   self.assertEqual(datetime.date(2027,3,14).strftime('%A'),'Sunday')
   self.assertEqual(datetime.date(2027,3,15).strftime('%A'),'Monday')
  def test_record_template(self):
-  j=json.loads((P/'templates/job-record.json').read_text());self.assertEqual(j['schema_version'],'1.0');self.assertEqual(j['hotels'][0]['status'],'candidate')
+  j=json.loads((P/'templates/job-record.json').read_text());self.assertEqual(j['schema_version'],'1.1');self.assertEqual(j['hotels'][0]['status'],'candidate')
  def test_costs_and_unknowns(self):
   with (P/'examples/proposal-comparison.csv').open() as f:r=list(csv.DictReader(f))
   self.assertEqual(len(r),2)
   for row in r:
    self.assertEqual(int(row['Room nights'])*int(row['Rate per room-night USD']),int(row['Room subtotal USD']))
-   self.assertEqual(sum(int(row[k] or 0) for k in ['Room subtotal USD','Meeting rental USD','F&B minimum USD','AV USD','Mandatory fees USD','Taxes USD']),int(row['Known subtotal USD']))
-   self.assertEqual(row['Complete total USD'],'');self.assertEqual(row['Taxes USD'],'');self.assertIn('Taxes',row['Missing / conflicts'])
+   self.assertEqual(sum(int(row[k]) if row[k] not in ('','Not applicable') else 0 for k in ['Room subtotal USD','Meeting rental USD','F&B minimum USD','AV USD','Mandatory fees USD','Taxes USD']),int(row['Known subtotal USD']))
+   self.assertEqual(row['F&B minimum USD'],'Not applicable');self.assertEqual(row['Complete total USD'],'');self.assertEqual(row['Taxes USD'],'');self.assertIn('Taxes',row['Missing / conflicts'])
   self.assertEqual([x['Known subtotal USD'] for x in r],['10200','10450'])
  def test_workbook(self):
   with zipfile.ZipFile(P/'examples/proposal-comparison.xlsx') as z:
