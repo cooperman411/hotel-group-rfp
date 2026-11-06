@@ -1,6 +1,6 @@
 # Hotel Group RFP Skill
 
-> **Status: In development, draft for review. Not published yet.**
+> **Status: In development.**
 >
 > This is a hotel group and meeting skill for preparing group hotel RFPs. It prepares the intake, the hotel-facing text, and the verification package, and it guides submission on a hotel chain RFP portal.
 
@@ -22,17 +22,6 @@ A chain-agnostic workflow with one adapter per portal. The adapter template is i
 4. Draft the hotel-facing text, check it against the adapter limit, and complete `templates/review-checklist.md`.
 5. Verify the final page, then submit.
 
-## What it does not do
+## Scope
 
-- It does not book, contract, pay for, or negotiate rooms or meeting space.
-
-## Source
-
-Adapted from a private agency workflow for a chain RFP portal. Agency defaults, the agency IATA number, client job records, and chain-specific labels were removed in this draft. The review-score gate, brand filters, setup, and hours that were agency defaults are now example preferences to fill in per portal, to confirm per job.
-
-## Before publishing
-
-- Choose a home for this skill: a new public repo, or an existing public repo.
-- Choose a license. No license file is included in this draft.
-- Fill in an adapter from the live portal page at publish time, and record the date you verified its limits.
-- Do not include any job folder, client name, confirmation number, or real RFP in the published copy.
+It covers research, form completion, and RFP submission. Booking, contracting, payment, and negotiation are out of scope.
