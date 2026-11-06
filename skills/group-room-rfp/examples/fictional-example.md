@@ -1,34 +1,15 @@
-# Fictional example, portal adapter
+# Fictional sourcing example
 
-This is a fictional example only. No real client, company, event, or hotel is named. Dates are illustrative. Use it to see the shape of a completed intake, not as a real RFP.
+All organizations, hotels, offers and confirmations below are invented. No RFP was sent. Dates are checked: March 13, 2027 is Saturday; March 14 is Sunday; March 15 is Monday.
 
-## Intake, fictional
+## Hotel-facing RFP
 
-- Portal: a chain RFP portal, with an adapter filled in for this example
-- Request type: rooms plus meeting space
-- Company or client: Harbor View Association, fictional
-- Event: Harbor View Annual Meeting, fictional
-- Event type: Business
-- Destination: Charlotte, fictional search area, downtown
-- Arrival: Friday, March 13, 2027. Departure: Sunday, March 15, 2027.
-- Meeting dates: Saturday, March 14, 2027
-- Rooms: 20 rooms on March 13, 20 rooms on March 14, one bed, plus 1 suite on March 14
-- Meeting: March 14, 40 attendees, 9:00 a.m. to 5:00 p.m.
-- Setup: U-shape preferred, boardroom style acceptable
-- AV: projector and screen requested. Wi-Fi: requested. F and B: none requested.
-- Commission: commissionable rates requested. Agency and IATA: to be supplied by the user, left blank in this example.
-- Review-score gate, example: 4.0 out of 5.0 or higher, verified on the portal.
-- Batch limit, in this example: 3 hotels. Text limit, in this example: 500 characters.
+Harbor View Annual Meeting — Charlotte, North Carolina
 
-## Hotel-facing text, fictional, 309 characters
+Please quote 20 guest rooms on Saturday, March 13 and 20 guest rooms plus one suite on Sunday, March 14, 2027. The group needs meeting space on March 14 for 40 attendees from 9 a.m. to 5 p.m. U-shape is preferred; boardroom is acceptable. Please include a projector, screen and Wi-Fi. Departure is March 15. Please respond by February 1, 2027 to the planner.
 
-`Please quote commissionable rates to {agency} (IATA {iata}) for 20 rooms Mar 13, 20 rooms plus 1 suite Mar 14, one bed. Meeting space needed Mar 14 for 40 attendees, 9:00 a.m. to 5:00 p.m. daily. U-shape preferred; boardroom style acceptable. Projector and screen requested. Wi-Fi requested. No F&B requested.`
+Please quote availability, room rates, meeting rental, mandatory fees, taxes and service charges, any concessions, commission terms, cancellation and attrition terms, and offer expiration.
 
-Note: replace `{agency}` and `{iata}` with the supplied values before submission, recount the characters, and shorten if the count goes over 500. Do not submit this fictional text as a real RFP.
+## Fictional record
 
-## What happens next in the example
-
-1. The agent shows the normalized intake and the proposed batch of up to 3 hotels, with verified scores, to the user.
-2. The agent completes the review checklist against the final page.
-3. The agent submits after successful final verification.
-4. The agent records the confirmation number, hotels, event summary, and response timing in `submission-log.csv`.
+41 room nights; peak 21 rooms. A portal confirmation for Willow House was verified. A direct email to River Hotel was sent with a verified sent-message record; receipt was not independently confirmed. Both subsequently supplied fictional proposals. A revised Willow quote replaces neither its prior version nor its source. See the sample comparison and report. These statuses model a workflow; no real website or mailbox was contacted.

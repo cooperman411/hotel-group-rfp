@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "job_id": "",
+  "requirements": {"request_type": "", "event": "", "destination": "", "dates": "", "contact": "", "proposal_deadline": "", "decision_deadline": "", "rooms_by_night": [], "functions": [], "hard_requirements": [], "optional_requirements": [], "unresolved": []},
+  "authorization": {"scope": "", "approved_at": "", "evidence": ""},
+  "last_mail_check_at": "",
+  "hotels": [{"hotel": "", "location": "", "status": "candidate", "submission_method": "", "submitted_at": "", "submission_evidence": "", "confirmation_number": "", "confirmation_email_reference": "", "confirmation_evidence": "", "proposal_deadline": "", "follow_up_at": "", "communications": [], "proposals": [], "missing_or_conflicting": [], "outcome": ""}],
+  "artifacts": []
+}

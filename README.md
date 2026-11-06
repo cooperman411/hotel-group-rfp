@@ -1,45 +1,21 @@
-# Hotel Group RFP Skill
+# Hotel Group Sourcing Skill
 
-> **Status: In development.**
+**Status: in development.** Prepare hotel requests, track submissions, compare proposals, and report to a decision-maker. Supports guest rooms, meeting space, or both.
 
-Group hotel RFPs ask for the same details every time: dates, rooms by night, meeting days, attendees, hours, setups, food and beverage, AV, Wi-Fi. This skill collects those details once, turns them into a short RFP the hotel can act on, and walks through submission on a hotel chain RFP portal, or produces a standalone RFP to email directly to one hotel or many.
+## Start
 
-It is built for room blocks and meeting space together. Tell it what the group needs, and it prepares the intake, drafts the hotel-facing text, checks the work against a review checklist, and submits in batches, recording the confirmation number for each one.
+1. Give your assistant the `skills/group-room-rfp` folder, or paste `SKILL.md` and its referenced files into a capable chat. Installation differs by platform; no particular connector is required.
+2. Say: “Help me source hotels for a group.” On first use, the assistant checks capabilities and asks for relevant preferences. Existing preferences are reused only when the environment can save them safely.
+3. Give the destination, dates, request type, and the room pattern and/or meeting requirements. The assistant creates a short RFP and a job record. It can use a URL you supply.
+4. Review the hotels and submission scope. External submissions and messages require your authorization. The assistant records only verified outcomes.
+5. Provide proposals, or authorize mailbox checks if available. Request an updated comparison and decision report at any time.
 
-## How it works
+See [the skill](skills/group-room-rfp/SKILL.md), [setup](skills/group-room-rfp/templates/first-use-setup.md), [job record](skills/group-room-rfp/templates/job-record.json), and [fictional example](skills/group-room-rfp/examples/fictional-example.md). Spreadsheet and report examples are in that folder. Copy job files to private storage outside this repository. Do not commit personal information, client records, or credentials.
 
-1. Interview. The skill asks for what is missing: request type, destination, arrival and departure dates, the room block by night, meeting dates with attendees and hours, preferred setup and fallback, AV, Wi-Fi, and food and beverage. It also takes the agency name and IATA number when supplied. Only the essentials are required. The rest is optional.
-2. Intake. The answers become a normalized requirements summary in `templates/task-intake.md`, so the same details carry through every batch.
-3. Draft. The skill writes a short hotel-facing paragraph from the intake and checks its length against the portal limit in the adapter.
-4. Select. Hotels go in batches, up to the limit the portal adapter sets. If the user sets a review-score gate, only hotels at or above it qualify.
-5. Verify and submit. The review checklist runs against the live page. When it passes, the skill submits and records the confirmation number, the hotels, and the stated response timing in the submission log.
+Browser control, email, scheduling, persistent storage, and Word/PDF/XLSX generation depend on the host and permissions. Without them, use the plain-text RFP, manual submissions and uploads, and CSV comparison. The skill does not promise continuous monitoring.
 
-A document comes with every RFP. The skill produces an RFP document for every job, in the form the user picks: Word, PDF, or plain text. The user can send it to the salesperson afterward, even after a portal submission. Anything skipped shows as To confirm.
+## Use and review
 
-## Direct email fallback
+AI output can be incomplete or wrong. Verify dates, calculations, prices, fees, deadlines, submission evidence, and contract terms before relying on them. Use only systems and data you are authorized to access; comply with applicable law and third-party website terms. Do not bypass authentication, CAPTCHAs, rate limits, or access controls. This project does not provide legal, tax, financial, or contracting advice, make payments, sign contracts, or accept proposals.
 
-When the group is for one hotel or many, the same interview produces a standalone RFP instead: a Word document, a PDF, or plain text to paste into an email. The user picks the format. Branding, a header, and email addresses are all optional, and the document stays simple: one font, black text, bold for headings, bullets for lists. The user sends it from their own mailbox.
-
-## One skill, one adapter per portal
-
-Portals differ in labels, batch limits, and text limits. The skill itself does not change per portal. Each portal gets a short adapter file that records its labels and limits, filled in from the live portal page. Copy `adapters/portal-adapter-template.md` to start one.
-
-## What is in this repo
-
-- `skills/group-room-rfp/SKILL.md`, the core skill
-- `skills/group-room-rfp/adapters/portal-adapter-template.md`, a blank adapter to copy per portal
-- `skills/group-room-rfp/adapters/README.md`, what an adapter is and how to add one
-- `skills/group-room-rfp/templates/`, blank intake, field map, review checklist, output schema, and submission log
-- `skills/group-room-rfp/examples/fictional-example.md`, a fictional example: a 20-room block plus one suite, 40 attendees, one meeting day
-
-## How to use it
-
-1. Copy the skill folder into an agent that can read `SKILL.md` files, or use it as a standalone reference.
-2. Start with `SKILL.md`, then load or fill in the adapter for the portal you are using.
-3. Complete `templates/task-intake.md` in a job folder before opening any portal.
-4. Draft the hotel-facing text, check it against the adapter limit, and complete `templates/review-checklist.md`.
-5. Verify the final page, then submit.
-
-## Scope
-
-It covers research, form completion, and RFP submission. Booking, contracting, payment, and negotiation are out of scope.
+**License status:** No license file was present in the reviewed repository. The owner should choose an open-source license before public release. The operational notice above and any future license disclaimer do not guarantee immunity from liability. Have counsel review this notice and the selected license before release.
