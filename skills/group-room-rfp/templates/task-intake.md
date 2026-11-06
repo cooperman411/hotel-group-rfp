@@ -2,6 +2,8 @@
 
 Complete this intake before opening any hotel chain RFP portal. The completed copy becomes `task-intake.md` in the job folder. Use the attached or current request as the source of truth. Confirm defaults when the request may represent another client or agency.
 
+Only these are required: request type, destination, arrival and departure dates, the room block by night, and, when meeting space is requested, meeting dates and attendees. Everything else is optional. Leave an optional field blank or write To confirm. Never invent a value.
+
 Chain and adapter in use:
 
 - **Chain:**
@@ -71,15 +73,15 @@ Do not silently substitute a different setup. Ask the user if the preferred setu
 
 ## RFP document and hotel-facing text
 
-- **Attach or create an RFP document?** (yes / no; default no)
-- **Word document needed as a standalone RFP?** (yes / no)
+- **Create an RFP document for this job?** (yes / no; default yes)
+- **Document form:** (Word / PDF / plain text)
 - **Omit budget or rate target from hotel-facing text?** (yes / no; default yes)
 - **Internal budget or target rate for screening only:**
 - **Other instructions for the hotel-facing text:**
 
 ## Normalized requirements review
 
-Before opening the website, summarize the final normalized requirements here and resolve any missing dates, room counts, attendees, meeting days, or contradictions.
+Before opening the website, summarize the final normalized requirements here. Mark anything unknown as To confirm. Resolve contradictions before opening the website.
 
 **Normalized summary:**
 

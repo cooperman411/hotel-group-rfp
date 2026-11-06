@@ -2,17 +2,23 @@
 
 > **Status: In development.**
 
-Group hotel RFPs ask for the same details every time: dates, rooms by night, meeting days, attendees, hours, setups, food and beverage, AV, Wi-Fi. This skill collects those details once, turns them into a short RFP the hotel can act on, and walks through submission on a hotel chain RFP portal.
+Group hotel RFPs ask for the same details every time: dates, rooms by night, meeting days, attendees, hours, setups, food and beverage, AV, Wi-Fi. This skill collects those details once, turns them into a short RFP the hotel can act on, and walks through submission on a hotel chain RFP portal, or produces a standalone RFP to email directly to one hotel or many.
 
 It is built for room blocks and meeting space together. Tell it what the group needs, and it prepares the intake, drafts the hotel-facing text, checks the work against a review checklist, and submits in batches, recording the confirmation number for each one.
 
 ## How it works
 
-1. Interview. The skill asks for what is missing: request type, destination, arrival and departure dates, the room block by night, meeting dates with attendees and hours, preferred setup and fallback, AV, Wi-Fi, and food and beverage. It also takes the agency name and IATA number when supplied.
+1. Interview. The skill asks for what is missing: request type, destination, arrival and departure dates, the room block by night, meeting dates with attendees and hours, preferred setup and fallback, AV, Wi-Fi, and food and beverage. It also takes the agency name and IATA number when supplied. Only the essentials are required. The rest is optional.
 2. Intake. The answers become a normalized requirements summary in `templates/task-intake.md`, so the same details carry through every batch.
 3. Draft. The skill writes a short hotel-facing paragraph from the intake and checks its length against the portal limit in the adapter.
 4. Select. Hotels go in batches, up to the limit the portal adapter sets. If the user sets a review-score gate, only hotels at or above it qualify.
 5. Verify and submit. The review checklist runs against the live page. When it passes, the skill submits and records the confirmation number, the hotels, and the stated response timing in the submission log.
+
+A document comes with every RFP. The skill produces an RFP document for every job, in the form the user picks: Word, PDF, or plain text. The user can send it to the salesperson afterward, even after a portal submission. Anything skipped shows as To confirm.
+
+## Direct email fallback
+
+When the group is for one hotel or many, the same interview produces a standalone RFP instead: a Word document, a PDF, or plain text to paste into an email. The user picks the format. Branding, a header, and email addresses are all optional, and the document stays simple: one font, black text, bold for headings, bullets for lists. The user sends it from their own mailbox.
 
 ## One skill, one adapter per portal
 

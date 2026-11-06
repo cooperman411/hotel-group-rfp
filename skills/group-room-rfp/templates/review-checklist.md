@@ -13,7 +13,7 @@ Review-score quality gate, if the user set one:
 ## Request and hotel batch
 
 - [ ] Current `task-intake.md` reflects the user's request
-- [ ] Normalized requirements were resolved before website entry
+- [ ] Normalized requirements were recorded before website entry, with anything unknown marked To confirm
 - [ ] Request type is correct: rooms, meeting space, or rooms plus meeting space, using the portal labels
 - [ ] Exact destination and dates are correct
 - [ ] Current hotel batch contains no more than the adapter batch limit
@@ -26,12 +26,12 @@ Review-score quality gate, if the user set one:
 
 ## Event and room details
 
-- [ ] Company or client, event name, and event type are correct
+- [ ] Company or client, event name, and event type are correct when supplied, otherwise To confirm
 - [ ] Room pattern is correct for every night
 - [ ] Bed types and suites are correct where applicable
 - [ ] Meeting space is included only on actual meeting days
-- [ ] Attendees and hours are correct for each meeting day
-- [ ] Requested layout is selected and visibly verified separately in every meeting-day control
+- [ ] Attendees are correct for each meeting day; hours are correct when known, otherwise To confirm
+- [ ] Requested layout is selected and visibly verified separately in every meeting-day control, when known
 - [ ] Fallback setup was approved by the user if the preferred setup was unavailable
 - [ ] Breakout rooms are correct, if any
 - [ ] Only requested AV, Wi-Fi, and F and B options are selected
@@ -40,9 +40,9 @@ Review-score quality gate, if the user set one:
 
 - [ ] Visible contact fields are verified
 - [ ] Optional chain representative or national sales contact field is blank unless requested
-- [ ] Attachment is blank unless the user requested an available document
+- [ ] RFP document is attached when the user wants it attached and the portal accepts one
 - [ ] Hotel-facing text includes commissionable rates and agency and IATA, when supplied
-- [ ] Hotel-facing text includes room quantities, bed type, meeting days, attendees, hours, and setup and fallback
+- [ ] Hotel-facing text includes what is known: room quantities, bed type, meeting days, attendees, and hours and setup when known
 - [ ] Hotel-facing text contains only requested AV, Wi-Fi, and F and B details
 - [ ] Hotel-facing text excludes budget or rate targets, neighborhoods, and hotel names unless requested
 - [ ] Hotel-facing text is at or below the adapter character limit
@@ -57,7 +57,7 @@ Review-score quality gate, if the user set one:
 
 - [ ] Final page reviewed after all fields were entered
 - [ ] All fields match the resolved request for this exact batch
-- [ ] No blocked fields, uncertain selections, or unresolved questions remain
+- [ ] No blocked fields or unverified selections remain. Items marked To confirm are recorded as such.
 
 **Hotels in this batch and verified review scores, if a gate was set:**
 
@@ -72,4 +72,4 @@ Review-score quality gate, if the user set one:
 
 ## Notes
 
-Any mismatch, blocked field, stale page state, or unresolved question must be documented and escalated before submission.
+Any mismatch, blocked field, or stale page state must be documented and escalated before submission. Items marked To confirm are carried as To confirm, not treated as blockers.

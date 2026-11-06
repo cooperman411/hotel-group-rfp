@@ -13,12 +13,12 @@ All job outputs are saved under:
 - [ ] Current request captured in `task-intake.md`
 - [ ] Chain and adapter identified, with batch limit and hotel-facing text limit recorded
 - [ ] Request type identified: rooms only, meeting space only, or rooms plus meeting space
-- [ ] Company or client, event name, and event type recorded
+- [ ] Company or client, event name, and event type recorded when supplied, otherwise To confirm
 - [ ] Destination and search preferences recorded
-- [ ] Arrival, departure, meeting dates, flexibility, and alternates resolved
+- [ ] Arrival, departure, and meeting dates recorded; flexibility and alternates recorded when offered, otherwise To confirm
 - [ ] Room block recorded by night, including bed type and suites when applicable
-- [ ] Attendees and hours recorded for each meeting day
-- [ ] Setup, fallback, AV, Wi-Fi, and F and B requirements recorded
+- [ ] Attendees recorded for each meeting day; hours recorded when known, otherwise To confirm
+- [ ] Setup and fallback recorded when known, otherwise To confirm; AV, Wi-Fi, and F and B recorded only when requested
 - [ ] Commission recipient, agency, and IATA confirmed or left blank when not supplied
 - [ ] Attachment preference and requested chain representative or national sales contact recorded
 - [ ] Normalized requirements summary completed before website work begins
@@ -40,10 +40,10 @@ All job outputs are saved under:
 - [ ] Event profile matches the normalized intake
 - [ ] Room block totals are correct for every night
 - [ ] Meeting space appears only on actual meeting days
-- [ ] Attendees and hours are entered separately by meeting day
-- [ ] Requested layout is selected and visibly verified separately for every meeting day. Any control problem or unavailable setup is resolved with the user.
+- [ ] Attendees are entered separately by meeting day; hours are entered when known, otherwise To confirm
+- [ ] Requested layout is selected and visibly verified separately for every meeting day, when known. Any control problem or unavailable setup is resolved with the user.
 - [ ] Only requested AV, Wi-Fi, and F and B fields are populated
-- [ ] Optional Word RFP is created only when requested and is rendered and previewed before use
+- [ ] RFP document is created for every job unless the user declines, in the form the user picked (Word, PDF, or plain text), and is rendered and previewed before use
 - [ ] Hotel-facing text is assembled and counted at or below the adapter limit
 
 ## Stage 4, Final verification and approval
