@@ -2,7 +2,7 @@
 
 Prepare hotel requests for guest rooms, meeting space, or both. Track submissions and compare proposals for a decision-maker.
 
-**In development.** The skill has not been validated with live websites, mailboxes, or hotel systems.
+Based on a workflow used for real hotel group sourcing. Live submission and mailbox access depend on your assistant’s tools and permissions.
 
 ## Start
 
