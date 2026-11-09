@@ -1,6 +1,6 @@
 # Hotel Group Sourcing Skill
 
-Prepare hotel requests for guest rooms, meeting space, or both. Track submissions and compare proposals for a decision-maker.
+Prepare and submit hotel requests for guest rooms, meeting space, or both. Track submissions and compare proposals for a decision-maker.
 
 Based on a workflow used for real hotel group sourcing. Live submission and mailbox access depend on your assistant’s tools and permissions.
 
@@ -19,9 +19,9 @@ If your assistant cannot open the repository, give it the `skills/group-room-rfp
 
 ## Why This Exists
 
-I built this skill after more than a decade of sourcing hotels for groups. Preparing the request for proposal (RFP) is only the first step. Planners also have to verify submissions, track revised quotes, and identify missing costs before they can recommend a hotel.
+I built this skill after more than a decade of sourcing hotels for groups. Preparing the request for proposal (RFP) is only the first step. Planners also have to find the right properties, verify submissions, track quotes and revised quotes, and identify missing costs before they can recommend a hotel.
 
-The skill keeps a portable job record with proposal versions and sources. It distinguishes missing costs from zero and separates a verified submission from a confirmed receipt. Use the browser, email, and document tools you already have. The skill works without a specific connector.
+The skill keeps a portable job record with proposal versions and sources. It distinguishes missing costs from free or included and separates a verified submission from a confirmed receipt. Use the browser, email, and document tools you already have. The skill works without a specific connector.
 
 ## Workflow
 
@@ -30,13 +30,13 @@ The skill keeps a portable job record with proposal versions and sources. It dis
 3. Provide proposals or authorize mailbox checks if your assistant supports them.
 4. Review the comparison and decision report. Request an update when proposals change.
 
-Browser access, email, scheduling, and document generation depend on your assistant's tools and permissions. For manual work, use the plain-text RFP, submit it manually, and upload the proposals for comparison. The skill can produce a CSV comparison. Check for replies on demand unless you have authorized an available scheduler. Save job files in private storage. Keep personal information, client records, and credentials out of this repository.
+Browser access, email, scheduling, and document generation depend on your assistant's tools and permissions. For manual work, use the plain-text RFP, submit it manually, and upload the proposals for comparison. The skill can produce a CSV comparison. Check for replies on demand unless you have authorized an available scheduler or use a proactive AI agent to monitor. Save project files in private storage. Keep personal information, client records, and credentials out of this repository.
 
 See the [skill](skills/group-room-rfp/SKILL.md), [setup guide](skills/group-room-rfp/templates/first-use-setup.md), [job record](skills/group-room-rfp/templates/job-record.json), and [fictional example](skills/group-room-rfp/examples/fictional-example.md).
 
 ## Use and Review
 
-Use only systems and data you are authorized to access. Follow applicable law and website terms. Respect authentication, rate limits, and other access controls.
+Use only systems and data you are authorized to access. Follow applicable law and website terms. Respect authentication, access limits, and other controls or restrictions.
 
 Verify recipients and requirements before sending. Check submission evidence before reporting success. Review prices, fees, deadlines, and contract terms before making a decision. Errors can expose confidential information or cause financial loss.
 
