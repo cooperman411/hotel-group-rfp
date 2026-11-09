@@ -1,8 +1,6 @@
 # Hotel Group Sourcing Skill
 
-**Status: in development.** Prepare hotel requests, track submissions, compare proposals, and report to a decision-maker. Supports guest rooms, meeting space, or both.
-
-**Use at your own risk.** This project has not been validated on live websites, mailboxes or hotel systems. You are responsible for verifying requirements, recipients, submissions, proposal calculations, fees, deadlines and contract terms before acting. Incorrect outputs or external actions can cause financial loss or disclose confidential information. The software and documentation are provided without warranty under the [MIT License](LICENSE), which includes a limitation of author liability.
+Prepare hotel requests, track submissions, compare proposals, and report to a decision-maker. Supports guest rooms, meeting space, or both.
 
 ## Start
 
@@ -40,7 +38,7 @@ Browser control, email, scheduling, persistent storage, and Word/PDF/XLSX genera
 
 ## Use and review
 
-AI output can be incomplete or wrong. Verify dates, calculations, prices, fees, deadlines, submission evidence, and contract terms before relying on them. Use only systems and data you are authorized to access; comply with applicable law and third-party website terms. Do not bypass authentication, CAPTCHAs, rate limits, or access controls. This project does not provide legal, tax, financial, or contracting advice, make payments, sign contracts, or accept proposals.
+AI output can be incomplete or wrong. Verify dates, calculations, prices, fees, deadlines, submission evidence, and contract terms before relying on them. Use only systems and data you are authorized to access; comply with applicable law and third-party website terms. Do not bypass authentication, CAPTCHAs, rate limits, or access controls. This project does not provide legal, tax, financial, or contracting advice, make payments, sign contracts, or accept proposals. Use it at your own risk. The skill prepares the work, but the checks and the decisions stay with you.
 
 ## License
 
