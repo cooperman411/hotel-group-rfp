@@ -15,6 +15,16 @@ Read README.md, skills/group-room-rfp/SKILL.md, and the files it references. Che
 
 If your assistant cannot open the repository, give it the `skills/group-room-rfp` folder, or paste `SKILL.md` and its referenced files into the chat. Installation differs by platform; no particular connector is required.
 
+## Install as an agent skill (optional)
+
+For an AI agent that supports the [Skills CLI](https://skills.sh/docs), install from this public repository:
+
+```bash
+npx skills add cooperman411/hotel-group-rfp
+```
+
+This installs the `group-room-rfp` skill for compatible agents. Browser, email, storage, and document capabilities still depend on the agent and its permissions. The copy-and-paste **Start** prompt above also works without installation.
+
 ## Why this exists
 
 I built this based on the hotel sourcing work I have been doing for over a decade. The RFP is only the start. Someone still has to track what was sent, confirm what arrived, sort through changing proposals, catch missing costs, follow up, and give a decision-maker a clear comparison. This skill helps an AI assistant carry that work through in a practical, reviewable way.
@@ -51,5 +61,6 @@ AI output can be incomplete or wrong. Verify dates, calculations, prices, fees, 
 - [AI Social Publishing for Muse](https://github.com/cooperman411/ai-social-publishing)
 - [Hotel Group Sourcing Skill](https://github.com/cooperman411/hotel-group-rfp)
 - [Hotel Revenue Management Toolkit](https://github.com/cooperman411/hotel-revenue-management)
+- [Job Search Simplified](https://github.com/cooperman411/job-search-simplified)
 - [PT/OS One](https://github.com/cooperman411/plain-text-os-one)
 - [PT/OS Workspace](https://github.com/cooperman411/plain-text-os)
